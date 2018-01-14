@@ -4,7 +4,7 @@ import './../style/app.css';
 class Edit extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="Edit">
          <h1>OPTIONS</h1>
       </div>
     );

@@ -4,7 +4,7 @@ import './../App.css';
 class Filter extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="Filter">
          <h1>Filters</h1>
       </div>
     );
