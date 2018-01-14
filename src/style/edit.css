@@ -5,3 +5,31 @@
 .Edit {
   color: #EEEEEE;
   background: #222831; }
+  .Edit h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 200; }
+  .Edit input {
+    margin-right: 500px; }
+  .Edit .slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    margin: auto;
+    background: #666666;
+    outline: none; }
+    .Edit .slider .warp {
+      width: 70%;
+      margin: 0 auto; }
+      .Edit .slider .warp .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #00ADB5;
+        cursor: pointer; }
+      .Edit .slider .warp .sliders {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px; }

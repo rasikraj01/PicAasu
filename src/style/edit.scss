@@ -3,4 +3,42 @@
 .Edit{
    color: $white;
    background: $black;
+   h1{
+      text-align: center;
+      margin-top: 30px;
+      font-weight: 200;
+   }
+   input{
+      margin-right: 500px;
+   }
+
+   .slider {
+      -webkit-appearance: none;
+      width: 70%;
+      height: 5px;
+      margin: auto;
+      background: #666666;
+      outline: none;
+
+       .warp{
+          width: 70%;
+          margin: 0 auto;
+
+          .slider::-webkit-slider-thumb {
+           -webkit-appearance: none;
+           appearance: none;
+           width: 15px;
+           height: 15px;
+           border-radius: 100%;
+           background: $lightBlue;
+           cursor: pointer;
+          }
+
+          .sliders{
+          width: 80%;
+          margin: auto;
+          margin-top: 50px;
+          }
+       }
+   }
 }

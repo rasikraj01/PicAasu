@@ -7,4 +7,5 @@
   background: #222831; }
   .Image img {
     position: relative;
-    width: 70%; }
+    width: 70%;
+    margin: 100px; }
