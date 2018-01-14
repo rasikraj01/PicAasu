@@ -1,6 +1,10 @@
 @import "base.scss";
 
-.Edit{
+.Image{
    color: $white;
    background: $black;
+   img{
+      position: relative;
+      width: 70%
+   }
 }

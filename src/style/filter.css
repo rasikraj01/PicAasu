@@ -1,4 +1,8 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 .Filter {
-  background: yellow; }
+  background: #393E46; }
   .Filter h1 {
-    color: blue; }
+    color: #EEEEEE; }

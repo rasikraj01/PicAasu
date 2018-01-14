@@ -1,6 +1,8 @@
+@import 'base.scss';
+
 .Filter{
    h1{
-      color: blue;
+      color: $white;
    }
-   background: yellow;
+   background: $grey;
 }

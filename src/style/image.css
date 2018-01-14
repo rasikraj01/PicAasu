@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
-.Edit {
+.Image {
   color: #EEEEEE;
   background: #222831; }
+  .Image img {
+    position: relative;
+    width: 70%; }
