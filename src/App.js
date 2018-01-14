@@ -5,6 +5,8 @@ import Filters from './components/filters';
 import Edit from './components/edit';
 import Footer from './components/footer';
 
+import './style/app.css'
+
 class App extends Component {
   render() {
     return (

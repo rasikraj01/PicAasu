@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './../App.css';
+import './../style/uploadPic.css';
 
 class UploadPic extends Component {
   render() {

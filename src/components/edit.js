@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './../style/app.css';
+import './../style/edit.css';
 
 class Edit extends Component {
   render() {
     return (
       <div className="Edit">
-         <h1>OPTIONS</h1>
+         <h1>Edit</h1>
       </div>
     );
   }
