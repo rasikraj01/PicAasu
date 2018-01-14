@@ -8,6 +8,7 @@ class SingleFilter extends Component {
       <div className="SingleFilter">
          <div className="box">
             <Image imgSource={toEdit}/>
+            <p>Name</p>
          </div>
       </div>
     );

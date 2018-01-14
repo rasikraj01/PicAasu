@@ -6,10 +6,22 @@
    h1{
       color: $white;
    }
-   img{
-      height: 100px;
-      margin: 10px 20px;
-      width: 140px;
-      border: 1px solid #fff;
+   .SingleFilter{
+
+      img{
+         height: 70px;
+         margin: 15px 0 0 25px ;
+         width: 100px;
+         border: 1px solid #fff;
+      }
+      img:hover{
+         cursor: pointer;
+      }
+      p{
+         color: $white;
+         font-size: 15px;
+         font-weight: 200;
+         margin-left: 50px;
+      }
    }
 }

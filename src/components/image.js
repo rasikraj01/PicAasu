@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <img src={this.props.imgSource} alt="lgo" />
+      <img  id="image" src={this.props.imgSource} alt="lgo" />
     );
   }
 }
