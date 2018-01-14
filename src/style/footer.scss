@@ -1,0 +1,16 @@
+@import "base.scss";
+
+.Footer{
+   width: 100vw;
+   line-height: 30px;
+   position: absolute;
+   background: $black;
+   bottom:0;
+   h1{
+      padding-left: 20px;
+      font-weight: 100;
+      line-height: 30px;
+      font-size: 15px;
+      color: $lightBlue;
+   }
+}

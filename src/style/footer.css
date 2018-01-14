@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Footer {
+  width: 100vw;
+  line-height: 30px;
+  position: absolute;
+  background: #222831;
+  bottom: 0; }
+  .Footer h1 {
+    padding-left: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 15px;
+    color: #00ADB5; }
