@@ -9,24 +9,21 @@ class Edit extends Component {
 
       }
    }
-   OnInputChange(value){
-      console.log(value);
-   }
   render() {
     return (
       <div className="Edit">
          <h1>EDIT</h1>
          <div className="sliders">
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
-<Slider/>
+<Slider title="hue"/>
+<Slider title="saturation"/>
+<Slider title="contrast"/>
+<Slider title="brightness"/>
+<Slider title="invert"/>
+<Slider title="hue-rotate"/>
+<Slider title="sepia"/>
+<Slider title="grayscale"/>
+<Slider title="opacity"/>
+<Slider title="blur"/>
 
             </div>
       </div>

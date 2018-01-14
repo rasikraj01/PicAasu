@@ -13,7 +13,10 @@
     margin-right: 500px; }
   .Edit .sliders {
     margin: auto;
-    width: 80%; }
+    width: 80%;
+    height: inherit;
+    overflow-y: scroll;
+    max-height: 72vh; }
     .Edit .sliders .warp {
       width: 70%;
       margin: 0 auto; }

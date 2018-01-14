@@ -6,7 +6,6 @@ class Filters extends Component {
   render() {
     return (
       <div className="Filter">
-         <h1>Filters</h1>
 
             <SingleFilter/>
       </div>

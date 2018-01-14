@@ -2,7 +2,13 @@
 
 .Filter{
    background: $grey;
+   height: 200px;
    h1{
       color: $white;
+   }
+   img{
+      height: 100px;
+      margin: 10px 20px;
+      width: 140px;
    }
 }

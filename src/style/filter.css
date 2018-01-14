@@ -3,6 +3,11 @@
   padding: 0; }
 
 .Filter {
-  background: #393E46; }
+  background: #393E46;
+  height: 200px; }
   .Filter h1 {
     color: #EEEEEE; }
+  .Filter img {
+    height: 100px;
+    margin: 10px 20px;
+    width: 140px; }

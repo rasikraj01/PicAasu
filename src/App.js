@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/header';
-import Image from './components/image';
+import UploadImage from './components/uploadImage';
 import Filters from './components/filters';
 import Edit from './components/edit';
 import Footer from './components/footer';
@@ -14,7 +14,7 @@ class App extends Component {
          <Header />
          <div className="container">
             <Filters />
-            <Image />
+            <UploadImage />
             <Edit />
          </div>
          <Footer />

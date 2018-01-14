@@ -1,11 +1,14 @@
 @import "base.scss";
 
-.Image{
+.uploadImage{
    color: $white;
    background: $black;
    img{
       position: relative;
       width: 70%;
-      margin: 100px;
+      margin: 80px 0 0 80px;
+   }
+   p{
+      margin:10px 0 0 80px;
    }
 }

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Image from './image';
+import toEdit from './../imgs/test.jpg';
 
 class SingleFilter extends Component {
   render() {
     return (
       <div className="SingleFilter">
-         <div className="box"></div>
+         <div className="box">
+            <Image imgSource={toEdit}/>
+         </div>
       </div>
     );
   }
