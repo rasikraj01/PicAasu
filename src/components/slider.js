@@ -11,7 +11,7 @@ class Slider extends Component {
    OnInputChange(value){
       this.setState({value});
       var smalv = value/100;
-      $('.uploadImage img').css("filter", 'invert(this.samlv)');
+      $('.uploadImage img').css("filter", 'invert(1)');
    }
   render() {
     return (
