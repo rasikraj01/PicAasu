@@ -15,7 +15,7 @@ class Edit extends Component {
       <div className="Edit">
          <h1>EDIT</h1>
          <div className="sliders">
-<Slider title="saturation" max="100" unit="%" step="1" />
+<Slider title="saturate" max="200" unit="%" step="1" />
 <Slider title="contrast" max="100" step="1" unit="%" />
 <Slider title="brightness" step="1" max="100" unit="%" />
 <Slider title="invert" step="1" max="100" unit="%" />
