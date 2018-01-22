@@ -1,40 +1,29 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+
 
 class SaveImage extends Component {
-   onButtonClick(){
-      console.log('button clicked');
 
-  function takePicture() {
-    // Create canvas
-    const context = canvas.getContext('2d');
-    if(width && height) {
-      canvas.width = width;
-      canvas.height = height;
-      // Draw an image of the video on the canvas
-      context.drawImage(video, 0, 0, width, height);
+   save(){
+      $(function () {
+         const canvas = document.getElementById('canvas');
+         const tosave = document.getElementById('image');
 
-      // Create image from the canvas
-      const imgUrl = canvas.toDataURL('image/png');
+         var width = 100;
+         var height = 100;
+         const context = canvas.getContext('2d');
+         context.drawImage(tosave,0,0, width, height);
 
-      // Create img element
-      const img = document.createElement('img');
-
-      // Set img src
-      img.setAttribute('src', imgUrl);
-
-      // Set image filter
-      img.style.filter = filter;
-
-      // Add image to photos
-      photos.appendChild(img);
-    }
-  }
+         var dt = canvas.toDataURL('image/jpeg');
+         this.href = dt;
+      });
    }
   render() {
     return (
       <p className="saveImage">
-         <button id="save-button" onClick={this.onButtonClick()}>Save</button>
+         <button id="save-button" onClick={this.save()}>Save</button>
          <canvas id="canvas"></canvas>
+         <div id="photos" onClick={this.save()} width="100" height="100" backgroud="black"></div>
       </p>
     );
   }
