@@ -12,6 +12,8 @@ class SaveImage extends Component {
          var width = 100;
          var height = 100;
          const context = canvas.getContext('2d');
+         context.filter = "sepia(20%)";
+
          context.drawImage(tosave,0,0, width, height);
 
          var dt = canvas.toDataURL('image/jpeg');

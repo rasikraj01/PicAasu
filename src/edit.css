@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Edit {
+  color: #EEEEEE;
+  background: #222831; }
+  .Edit h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 200; }
+  .Edit input {
+    margin-right: 500px; }
+  .Edit .sliders {
+    margin: auto;
+    width: 80%;
+    height: inherit;
+    overflow-y: scroll;
+    max-height: 72vh; }
+    .Edit .sliders .warp {
+      width: 70%;
+      margin: 0 auto; }
+      .Edit .sliders .warp .slider {
+        -webkit-appearance: none;
+        width: 70%;
+        height: 2px;
+        margin: auto;
+        background: #666666;
+        outline: none; }
+      .Edit .sliders .warp .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #00ADB5;
+        cursor: pointer; }
+      .Edit .sliders .warp p {
+        margin: 1px 0; }
+  .Edit .share {
+    color: #EEEEEE;
+    margin: 50px auto;
+    background: #00ADB5;
+    padding: 7px;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px; }
+  .Edit .share:hover {
+    cursor: pointer; }

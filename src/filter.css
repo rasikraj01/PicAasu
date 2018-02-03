@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Filter {
+  background: #393E46;
+  height: 200px; }
+  .Filter h1 {
+    color: #EEEEEE; }
+  .Filter .SingleFilter img {
+    height: 70px;
+    margin: 15px 0 0 25px;
+    width: 100px;
+    border: 1px solid #fff; }
+  .Filter .SingleFilter img:hover {
+    cursor: pointer; }
+  .Filter .SingleFilter p {
+    color: #EEEEEE;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 50px; }
