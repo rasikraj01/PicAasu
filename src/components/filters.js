@@ -4,6 +4,8 @@ import SingleFilter from './singleFilter';
 
 class Filters extends Component {
   render() {
+
+      console.log(this.props.filters.blur)
     return (
       <div className="Filter">
 
