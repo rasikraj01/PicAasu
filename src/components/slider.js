@@ -8,11 +8,9 @@ class Slider extends Component {
          value: '50'
       }
    }
-   OnInputChange(value){
-       // this.setState({value});
-       // var smalv = value;
+   OnInputChange(){
 
-      var opacity = ($('#opacity').val())/100;
+      // var opacity = ($('#opacity').val())/100;
       var saturate = ($('#saturate').val());
       var contrast = ($('#contrast').val());
       var sepia = ($('#sepia').val());
@@ -24,13 +22,12 @@ class Slider extends Component {
 
       $('.uploadImage img').css("filter", ` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
 
-      // console.log(`${id}(${smalv}${unit})`);
    }
   render() {
     return (
       <div className="warp">
             <p>{this.props.title}:</p>
-            <input type="range" min="0" max={this.props.max} className="slider" id={this.props.title} deg={this.props.unit} onChange={event => this.OnInputChange()} step={this.props.step} defaultValue='20'/>
+            <input type="range" min="0" max={this.props.max} className="slider" id={this.props.title} deg={this.props.unit} onChange={event => this.OnInputChange()} step={this.props.step} defaultValue={this.props.value}/>
       </div>
     );
   }
