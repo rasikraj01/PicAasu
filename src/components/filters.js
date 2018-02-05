@@ -4,12 +4,14 @@ import SingleFilter from './singleFilter';
 
 class Filters extends Component {
   render() {
-
-      console.log(this.props.filters.blur)
+     for (var key in this.props.filters){
+        console.log(key);
+        console.log(this.props.filters[key]);
+     }
     return (
       <div className="Filter">
 
-            <SingleFilter/>
+            <SingleFilter />
       </div>
     );
   }
