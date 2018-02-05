@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+//import $ from 'jquery';
 
 // take the image with the edits to a new link
 // and the user can download the edited make from there

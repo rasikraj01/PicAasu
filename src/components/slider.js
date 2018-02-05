@@ -4,6 +4,9 @@ import $ from 'jquery';
 class Slider extends Component {
    constructor(props){
       super(props);
+      this.state={
+
+      }
    }
    OnInputChange(){
 
@@ -18,7 +21,6 @@ class Slider extends Component {
       var huerotate = ($('#hue-rotate').val());
 
       $('.uploadImage img').css("filter", ` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
-
    }
   render() {
     return (

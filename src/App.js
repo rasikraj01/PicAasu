@@ -13,27 +13,106 @@ class App extends Component {
       super();
       this.state={
          filter:{
-            blur:{
-               saturate:0,
-               contrast: 0,
-               brightness: 0,
+            Sepia:{
+               key:0,
+               saturate:100,
+               contrast: 100,
+               brightness: 100,
                invert: 0,
                hueRotate: 0,
+               sepia: 80,
+               grayscale: 0,
+               blur: 0
+            },
+            hueRotate:{
+               key:1,
+               saturate:100,
+               contrast: 100,
+               brightness: 100,
+               invert: 0,
+               hueRotate: 270,
                sepia: 0,
-               grayscale: 100,
-               blur: 1
+               grayscale: 0,
+               blur: 0
             },
             grayscale:{
-               saturate:0,
-               contrast: 0,
-               brightness: 0,
+               key:2,
+               saturate:100,
+               contrast: 100,
+               brightness: 100,
                invert: 0,
                hueRotate: 0,
                sepia: 0,
                grayscale: 100,
                blur: 0
             },
+            invert:{
+               key:3,
+               saturate:100,
+               contrast: 100,
+               brightness: 100,
+               invert: 50,
+               hueRotate: 0,
+               sepia: 0,
+               grayscale: 0,
+               blur: 0
+            },
 
+            Contrast:{
+               key:4,
+               saturate:100,
+               contrast: 200,
+               brightness: 100,
+               invert: 0,
+               hueRotate: 0,
+               sepia: 0,
+               grayscale: 0,
+               blur: 0
+            },
+            Exposed:{
+               key:5,
+               saturate:100,
+               contrast: 100,
+               brightness: 200,
+               invert: 0,
+               hueRotate: 0,
+               sepia: 0,
+               grayscale: 0,
+               blur: 0
+            },
+            Saturated:{
+               key:6,
+               saturate:200,
+               contrast: 100,
+               brightness: 100,
+               invert: 0,
+               hueRotate: 0,
+               sepia: 0,
+               grayscale: 0,
+               blur: 0
+            },
+            pixel:{
+               key:7,
+               saturate:100,
+               contrast: 100,
+               brightness: 150,
+               invert: 0,
+               hueRotate: 300,
+               sepia: 0,
+               grayscale: 0,
+               blur: 0
+            },
+            Apple:{
+               key:8,
+               saturate:140,
+               contrast: 100,
+               brightness: 90,
+               invert: 0,
+               hueRotate: 0,
+               sepia: 0,
+               grayscale: 60,
+               blur: 0
+            },
          }
       }
    }

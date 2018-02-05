@@ -4,14 +4,20 @@ import SingleFilter from './singleFilter';
 
 class Filters extends Component {
   render() {
+     var listOfFilters=[];
+     var filterValues = [];
      for (var key in this.props.filters){
-        console.log(key);
-        console.log(this.props.filters[key]);
+        //console.log(this.props.filters[key]);
+        listOfFilters.push(key);
+        filterValues.push(this.props.filters[key]);
      }
+     console.log(filterValues);
+
     return (
       <div className="Filter">
-
-            <SingleFilter />
+            {
+               listOfFilters.map((item, index)=> <SingleFilter filterName = {item} filterValues={filterValues[index]}/>)
+            }
       </div>
     );
   }

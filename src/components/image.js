@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import ImagetoEdit from './../imgs/test.jpg';
 
 class Header extends Component {
   render() {
     return (
-      <img  id="image" src={ImagetoEdit} alt="lgo" />
+      <img  id="imageInFocus" src={this.props.imgSource} alt="lgo" />
     );
   }
 }

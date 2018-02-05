@@ -4,12 +4,9 @@ import './../style/edit.css';
 import Share from './share';
 
 class Edit extends Component {
-   constructor(props){
-      super(props);
-      this.state = {
-
-      }
-   }
+   // constructor(props){
+   //    super(props);
+   // }
   render() {
     return (
       <div className="Edit">
