@@ -13,7 +13,7 @@ class App extends Component {
       super();
       this.state={
          filter:{
-            Sepia:{
+            'Sepia':{
                key:0,
                saturate:100,
                contrast: 100,
@@ -24,7 +24,7 @@ class App extends Component {
                grayscale: 0,
                blur: 0
             },
-            hueRotate:{
+            'Hue Rotate':{
                key:1,
                saturate:100,
                contrast: 100,
@@ -35,7 +35,7 @@ class App extends Component {
                grayscale: 0,
                blur: 0
             },
-            grayscale:{
+            'Grayscale':{
                key:2,
                saturate:100,
                contrast: 100,
@@ -46,22 +46,21 @@ class App extends Component {
                grayscale: 100,
                blur: 0
             },
-            invert:{
+            'Inverted':{
                key:3,
                saturate:100,
                contrast: 100,
                brightness: 100,
-               invert: 50,
+               invert: 100,
                hueRotate: 0,
                sepia: 0,
                grayscale: 0,
                blur: 0
             },
-
-            Contrast:{
+            'Contrast':{
                key:4,
                saturate:100,
-               contrast: 200,
+               contrast: 140,
                brightness: 100,
                invert: 0,
                hueRotate: 0,
@@ -69,18 +68,18 @@ class App extends Component {
                grayscale: 0,
                blur: 0
             },
-            Exposed:{
+            'Exposed':{
                key:5,
                saturate:100,
                contrast: 100,
-               brightness: 200,
+               brightness: 130,
                invert: 0,
                hueRotate: 0,
                sepia: 0,
                grayscale: 0,
                blur: 0
             },
-            Saturated:{
+            'Saturated':{
                key:6,
                saturate:200,
                contrast: 100,
@@ -91,7 +90,7 @@ class App extends Component {
                grayscale: 0,
                blur: 0
             },
-            pixel:{
+            'Pixel':{
                key:7,
                saturate:100,
                contrast: 100,
@@ -102,7 +101,7 @@ class App extends Component {
                grayscale: 0,
                blur: 0
             },
-            Apple:{
+            'Pixel XL':{
                key:8,
                saturate:140,
                contrast: 100,
