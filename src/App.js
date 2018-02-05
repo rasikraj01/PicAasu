@@ -95,7 +95,7 @@ class App extends Component {
                key:7,
                saturate:100,
                contrast: 100,
-               brightness: 150,
+               brightness: 130,
                invert: 0,
                hueRotate: 300,
                sepia: 0,

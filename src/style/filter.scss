@@ -3,8 +3,8 @@
 .Filter{
    background: $grey;
    height: 200px;
-   overflow-x: scroll;
-   width: 100%;
+   overflow: scroll;
+   white-space: nowrap;
    h1{
       color: $white;
    }

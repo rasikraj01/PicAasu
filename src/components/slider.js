@@ -20,7 +20,7 @@ class Slider extends Component {
       var invert = ($('#invert').val());
       var huerotate = ($('#hue-rotate').val());
 
-      $('.uploadImage img').css("filter", ` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
+      $('#imageInFocus').css('filter', ` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
    }
   render() {
     return (
