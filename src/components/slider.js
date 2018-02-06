@@ -20,13 +20,16 @@ class Slider extends Component {
       var invert = ($('#invert').val());
       var huerotate = ($('#hue-rotate').val());
 
-      $('#imageInFocus').css('filter', ` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
+      $('img#imageInFocus').css('filter', `saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
+
+
+      console.log(` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
    }
   render() {
     return (
       <div className="warp">
             <p>{this.props.title}:</p>
-            <input type="range" min="0" max={this.props.max} className="slider" id={this.props.title} deg={this.props.unit} onChange={event => this.OnInputChange()} step={this.props.step} defaultValue={this.props.value}/>
+            <input type="range" min="0" max={this.props.max} className="slider" id={this.props.title} deg={this.props.unit} onChange={event => this.OnInputChange()} step={this.props.step} defaultValue={this.props.value} />
       </div>
     );
   }

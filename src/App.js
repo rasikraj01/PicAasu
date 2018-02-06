@@ -111,7 +111,7 @@ class App extends Component {
                sepia: 0,
                grayscale: 60,
                blur: 0
-            },
+            }
          }
       }
    }
