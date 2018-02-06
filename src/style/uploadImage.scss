@@ -3,6 +3,25 @@
 .uploadImage{
    color: $white;
    background: $black;
+   .AddImagetoEdit{
+      input[type="text"]{
+         width: 200px;
+         overflow: auto;
+         white-space: nowrap;
+         height: 25px;
+         padding-left: 15px;
+         border: none;
+         border-radius: 20px;
+         margin-bottom: 20px;
+         transition: all .2s;
+         color:#e3e3e3;
+         background: rgba(255,255,255,.1);
+      }
+      input:focus{
+         outline: none;
+         background: rgba(255,255,255,.25);
+      }
+   }
    img{
       position: relative;
       width: 70%;
