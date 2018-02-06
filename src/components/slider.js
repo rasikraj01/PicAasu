@@ -10,7 +10,6 @@ class Slider extends Component {
    }
    OnInputChange(){
 
-      // var opacity = ($('#opacity').val())/100;
       var saturate = ($('#saturate').val());
       var contrast = ($('#contrast').val());
       var sepia = ($('#sepia').val());
@@ -21,9 +20,6 @@ class Slider extends Component {
       var huerotate = ($('#hue-rotate').val());
 
       $('img#imageInFocus').css('filter', `saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
-
-
-      console.log(` saturate(${saturate}%) blur(${blur}px)  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`);
    }
   render() {
     return (
