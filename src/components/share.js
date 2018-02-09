@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class Share extends Component {
-  render() {
+   onButtonclick(e){
+      e.preventDefault();
+      var FilterName = ($('#newFilteraName').val());
+      console.log(FilterName);
+   }
+   render() {
     return (
-      <p className="share">
-         <input id="newFilteraName" type="text" placeholder="Name Your Filter"/>
-         <button id="share"> Share</button>
-      </p>
+      <form className="share">
+         <input id="newFilteraName" type="text" placeholder="Name Your Filter" />
+         <input type="submit" id="share" onSubmit={this.onButtonclick.bind(this)}/>
+      </form>
     );
   }
 }
