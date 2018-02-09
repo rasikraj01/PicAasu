@@ -3,16 +3,14 @@ import './../style/uploadImage.css';
 
 class AddImagetoEdit extends Component {
    onFormSubmit(e){
-      e.PreventDefault();
+      e.preventDefault();
       console.log('got url');
    }
   render() {
     return (
       <div className="AddImagetoEdit">
-         <form onSubmit={this.onFormSubmit}>
             <input name="url" type="text" placeholder="enter url to edit image"/>
-            <input type="submit"/>
-         </form>
+            <input type="submit" onClick={this.onFormSubmit}/>
       </div>
     );
   }

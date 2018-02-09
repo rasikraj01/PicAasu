@@ -9,6 +9,7 @@
       }
       input[type="submit"]{
          @include button;
+         height: fit-content;
       }
       input[type="submit"]:hover{
          @include buttonHover;
