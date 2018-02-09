@@ -4,7 +4,8 @@ class Share extends Component {
   render() {
     return (
       <p className="share">
-         Share
+         <input id="newFilteraName" type="text" placeholder="Name Your Filter"/>
+         <button id="share"> Share</button>
       </p>
     );
   }

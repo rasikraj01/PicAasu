@@ -30,3 +30,17 @@ $font: Roboto;
    background: #019198;
    transform:scale(1.05);
 }
+
+@mixin inputText {
+      width: 200px;
+      overflow: auto;
+      white-space: nowrap;
+      height: 25px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      transition: all .2s;
+      color:$white;
+      background: rgba(255,255,255,.1);
+}

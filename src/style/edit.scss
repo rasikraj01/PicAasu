@@ -46,17 +46,32 @@
           }
          }
    }
-   .share{
+   .share {
+      display: inline-block;
+      margin:20px 0 0 7vw;
+      input{
+         @include inputText;
+         margin-right: 10px ;
+         margin-bottom: 0;
+      }
 
-      @include button;
+      input[type="text"]:focus{
+         outline: none;
+         background: rgba(255,255,255,.2);
+      }
 
-      color:$white;
-      margin: 50px auto;
-      padding: 7px;
-      width: 60px;
+      input[type="text"]::placeholder{
+         color: #a0a0a0;
+      }
+      button{
 
+         @include button;
+
+         color:$white;
+
+      }
    }
-   .share:hover{
+   .share button:hover{
       @include buttonHover;
    }
 }
