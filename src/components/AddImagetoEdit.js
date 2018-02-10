@@ -12,7 +12,7 @@ class AddImagetoEdit extends Component {
 
     return (
       <div className="AddImagetoEdit">
-            <input id="image_url" name="url" type="text" placeholder="enter url to edit image" />
+            <input id="image_url" name="url" type="text" placeholder="Enter URL of the Image to Edit" />
             <input type="submit" onClick={this.props.UpdateImage}/>
       </div>
     );

@@ -13,7 +13,7 @@ class SingleFilter extends Component {
      var grayscale = this.props.filterValues.grayscale;
      var invert = this.props.filterValues.invert;
      var huerotate = this.props.filterValues.hueRotate;
-     //
+
      // var filter =  `saturate(${saturate}%) blur()  brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${huerotate}deg) invert(${invert}) sepia(${sepia}%)`;
      // console.log(filter);
 

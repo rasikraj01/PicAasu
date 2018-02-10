@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Image extends Component {
   render() {
+     console.log(this.props.imgSource);
     return (
       <img  id="imageInFocus" src={this.props.imgSource} alt="lgo" />
     );
   }
 }
 
-export default Header;
+export default Image;
