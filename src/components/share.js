@@ -6,13 +6,13 @@ class Share extends Component {
       e.preventDefault();
       var FilterName = ($('#newFilteraName').val());
       console.log(FilterName);
-      
+
    }
    render() {
     return (
       <p className="share">
          <input id="newFilteraName" type="text" placeholder="Name Your Filter" autoComplete="off"/>
-         <input type="submit" id="share" onClick={this.onButtonclick}/>
+         <input type="submit" id="share" onClick={this.onButtonclick} value="Share"/>
       </p>
     );
   }

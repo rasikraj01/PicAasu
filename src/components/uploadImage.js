@@ -20,7 +20,6 @@ class UploadImage extends Component {
 
 
    UpdateImage(){
-      //e.preventDefault();
       var url = $('#image_url').val();
       //console.log(url);
       this.setState({url});

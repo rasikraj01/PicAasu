@@ -12,9 +12,11 @@
     height: 120px;
     background: #393E46; }
   .container .uploadImage {
+    -webkit-font-smoothing: antialiased;
     grid-row: 2;
     grid-column: 1/4;
     height: 74vh; }
   .container .Edit {
+    -webkit-font-smoothing: antialiased;
     grid-row: 2;
     grid-column: 4/6; }
