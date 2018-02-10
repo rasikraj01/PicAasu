@@ -1,9 +1,12 @@
 @import "base.scss";
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 
 .Edit{
    color: $white;
    background: $black;
    h1{
+      font-family: 'Maven Pro', sans-serif;
+      letter-spacing: 5px;
       text-align: center;
       margin-top: 30px;
       font-weight: 200;

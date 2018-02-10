@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../style/uploadImage.css';
-import $ from 'jquery';
 
 class AddImagetoEdit extends Component {
   render() {

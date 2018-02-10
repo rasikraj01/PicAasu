@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import toEdit from './../imgs/test.jpg';
-import $ from 'jquery';
 
 class SingleFilter extends Component {
   render() {

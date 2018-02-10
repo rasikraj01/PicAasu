@@ -13,7 +13,7 @@ class Edit extends Component {
   render() {
     return (
       <div className="Edit">
-         <h1>EDIT</h1>
+         <h1>FILTERS</h1>
          <div className="sliders">
 <Slider title="saturate" max="500" unit="%" step="1" value="100"/>
 <Slider title="contrast" max="200" step="1" unit="%" value="100"/>
