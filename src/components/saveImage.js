@@ -5,29 +5,30 @@ import $ from 'jquery';
 
 class SaveImage extends Component {
 
-   save(){
-      $(function () {
-         const canvas = document.getElementById('canvas');
-         const tosave = document.getElementById('image');
-
-         var width = 100;
-         var height = 100;
-         const context = canvas.getContext('2d');
-         context.filter = "sepia(20%)";
-
-         //context.drawImage(tosave,0,0, width, height);
-
-         var dt = canvas.toDataURL('image/jpeg');
-         this.href = dt;
-      });
-
-      console.log('saved');
+   saved(){
+      //    $('.SaveImage').append('<canvas id="canvas"></canvas>');
+      //    const canvas = document.getElementById('canvas');
+      //    const tosave = document.getElementById('imageInFocus');
+      //
+      //    var width = document.getElementById('imageInFocus').width;
+      //    var height = document.getElementById('imageInFocus').height;
+      //
+      //     const context = canvas.getContext('2d');
+      //     context.filter = "sepia(50%)";
+      //
+      //     context.drawImage(tosave,0,0, width, height);
+      //
+      //     var dt = canvas.toDataURL('image/jpeg');
+      //     $('#save-button').href = dt;
+      //
+      //
+      // console.log('saved');
    }
   render() {
     return (
       <p className="saveImage">
-         <button id="save-button" onClick={this.save()}>Save</button>
-         <canvas id="canvas"></canvas>
+         <button id="save-button" onClick={this.saved()}>Save</button>
+
       </p>
     );
   }
