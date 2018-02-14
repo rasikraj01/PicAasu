@@ -73,6 +73,13 @@
          color:$white;
 
       }
+      .caution{
+         font-size: 13px;
+         color:#F73859;
+         font-smoothing:antialiased;
+         margin-left: 10px;
+         margin-top:5px;
+      }
    }
    .share #share:hover{
       @include buttonHover;

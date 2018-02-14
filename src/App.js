@@ -32,45 +32,43 @@ class App extends Component {
    }
    onSaveButtonClick(e){
       e.preventDefault();
-      var FilterName = ($('#newFilteraName').val());
-      var saturate = ($('#saturate').val());
-      var contrast = ($('#contrast').val());
-      var sepia = ($('#sepia').val());
-      var brightness = ($('#brightness').val());
-      var blur = ($('#blur').val());
-      var grayscale = ($('#grayscale').val());
-      var invert = ($('#invert').val());
-      var huerotate = ($('#hue-rotate').val());
 
-      var NewFilter = {
-         name:FilterName,
-         saturate:saturate,
-         contrast: contrast,
-         brightness: brightness,
-         invert: invert,
-         hueRotate: huerotate,
-         sepia: sepia,
-         grayscale: grayscale,
-         blur: blur
+      var FilterName = ($('#newFilteraName').val());
+
+      if(FilterName!== ""){
+
+         var saturate = ($('#saturate').val());
+         var contrast = ($('#contrast').val());
+         var sepia = ($('#sepia').val());
+         var brightness = ($('#brightness').val());
+         var blur = ($('#blur').val());
+         var grayscale = ($('#grayscale').val());
+         var invert = ($('#invert').val());
+         var huerotate = ($('#hue-rotate').val());
+
+         var NewFilter = {
+            name:FilterName,
+            saturate:saturate,
+            contrast: contrast,
+            brightness: brightness,
+            invert: invert,
+            hueRotate: huerotate,
+            sepia: sepia,
+            grayscale: grayscale,
+            blur: blur
+         }
+         this.setState({filter: this.state.filter.concat(NewFilter)});
+
+      }else{
+         alert('Please Give a Name to the Filter!');
+         
+         //$('.share').append('<p class="caution">Please Give a Name to the Filter</p>')
       }
 
-      console.log(NewFilter);
-      // this.setState()
-      //
-      // saturate:${saturate},
-      // contrast: ${contrast},
-      // brightness: ${brightness},
-      // invert: ${invert},
-      // hueRotate: ${huerotate},
-      // sepia: ${sepia},
-      // grayscale: ${grayscale},
-      // blur: ${blur}}`
-      console.log(this.state.filter);
-       this.state.filter.push(NewFilter);
-      this.setState({filter: this.filter})
-      //
-      // console.log(this.state.filter.concat([NewFilter]));
-   }
+      // TEST
+      //console.log(NewFilter);
+      //console.log(this.state.filter);
+      }
   render() {
     return (
       <div className="App">
