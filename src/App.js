@@ -13,109 +13,21 @@ import './style/app.css'
 class App extends Component {
    constructor(){
       super();
+      var filter = [{
+         name:'Sepia',
+         saturate:100,
+         contrast: 100,
+         brightness: 100,
+         invert: 0,
+         hueRotate: 0,
+         sepia: 80,
+         grayscale: 0,
+         blur: 0
+      },]
       this.state={
-         filter:{
-            'Sepia':{
-               key:0,
-               saturate:100,
-               contrast: 100,
-               brightness: 100,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 80,
-               grayscale: 0,
-               blur: 0
-            },
-            'Hue Rotate':{
-               key:1,
-               saturate:100,
-               contrast: 100,
-               brightness: 100,
-               invert: 0,
-               hueRotate: 270,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Grayscale':{
-               key:2,
-               saturate:100,
-               contrast: 100,
-               brightness: 100,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 100,
-               blur: 0
-            },
-            'Inverted':{
-               key:3,
-               saturate:100,
-               contrast: 100,
-               brightness: 100,
-               invert: 100,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Contrast':{
-               key:4,
-               saturate:100,
-               contrast: 140,
-               brightness: 100,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Exposed':{
-               key:5,
-               saturate:100,
-               contrast: 100,
-               brightness: 130,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Saturated':{
-               key:6,
-               saturate:200,
-               contrast: 100,
-               brightness: 100,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Pixel':{
-               key:7,
-               saturate:100,
-               contrast: 100,
-               brightness: 130,
-               invert: 0,
-               hueRotate: 300,
-               sepia: 0,
-               grayscale: 0,
-               blur: 0
-            },
-            'Pixel XL':{
-               key:8,
-               saturate:140,
-               contrast: 100,
-               brightness: 90,
-               invert: 0,
-               hueRotate: 0,
-               sepia: 0,
-               grayscale: 60,
-               blur: 0
-            }
+         filter: filter
          }
-      }
+
       this.onSaveButtonClick = this.onSaveButtonClick.bind(this);
    }
    onSaveButtonClick(e){
@@ -130,9 +42,34 @@ class App extends Component {
       var invert = ($('#invert').val());
       var huerotate = ($('#hue-rotate').val());
 
+      var NewFilter = {
+         name:FilterName,
+         saturate:saturate,
+         contrast: contrast,
+         brightness: brightness,
+         invert: invert,
+         hueRotate: huerotate,
+         sepia: sepia,
+         grayscale: grayscale,
+         blur: blur
+      }
 
-      console.log(FilterName);
-
+      console.log(NewFilter);
+      // this.setState()
+      //
+      // saturate:${saturate},
+      // contrast: ${contrast},
+      // brightness: ${brightness},
+      // invert: ${invert},
+      // hueRotate: ${huerotate},
+      // sepia: ${sepia},
+      // grayscale: ${grayscale},
+      // blur: ${blur}}`
+      console.log(this.state.filter);
+       this.state.filter.push(NewFilter);
+      this.setState({filter: this.filter})
+      //
+      // console.log(this.state.filter.concat([NewFilter]));
    }
   render() {
     return (

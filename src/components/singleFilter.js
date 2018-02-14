@@ -19,8 +19,8 @@ class SingleFilter extends Component {
     return (
       <li className="SingleFilter">
          <div className="box">
-            <img  id={this.props.filterName} src={toEdit} alt="lgo" style={filter_style}/>
-            <p>{this.props.filterName}</p>
+            <img  id={this.props.filterValues.name} src={toEdit} alt="lgo" style={filter_style}/>
+            <p>{this.props.filterValues.name}</p>
          </div>
       </li>
     );

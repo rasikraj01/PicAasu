@@ -16,7 +16,7 @@ class Filters extends Component {
     return (
       <div className="Filter">
             {
-               listOfFilters.map((item, index)=> <SingleFilter filterName = {item} filterValues={filterValues[index]}/>)
+               listOfFilters.map((item, index)=> <SingleFilter filterValues={filterValues[index]}/>)
             }
       </div>
     );
