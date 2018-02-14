@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './slider';
 import './../style/edit.css';
-import Share from './share';
 
 class Edit extends Component {
    constructor(props){
@@ -25,7 +24,10 @@ class Edit extends Component {
 <Slider title="blur" max="10" unit="px" step=".1" value="0"/>
 
             </div>
-            <Share />
+            <p className="share">
+               <input id="newFilteraName" type="text" placeholder="Name Your Filter" autoComplete="off"/>
+               <input type="submit" id="share" onClick={this.props.save} value="Share"/>
+            </p>
       </div>
 
     );

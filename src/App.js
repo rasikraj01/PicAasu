@@ -5,6 +5,8 @@ import Filters from './components/filters';
 import Edit from './components/edit';
 import Footer from './components/footer';
 
+import $ from 'jquery';
+
 import './style/app.css'
 
 
@@ -114,8 +116,24 @@ class App extends Component {
             }
          }
       }
+      this.onSaveButtonClick = this.onSaveButtonClick.bind(this);
    }
+   onSaveButtonClick(e){
+      e.preventDefault();
+      var FilterName = ($('#newFilteraName').val());
+      var saturate = ($('#saturate').val());
+      var contrast = ($('#contrast').val());
+      var sepia = ($('#sepia').val());
+      var brightness = ($('#brightness').val());
+      var blur = ($('#blur').val());
+      var grayscale = ($('#grayscale').val());
+      var invert = ($('#invert').val());
+      var huerotate = ($('#hue-rotate').val());
 
+
+      console.log(FilterName);
+
+   }
   render() {
     return (
       <div className="App">
@@ -123,7 +141,7 @@ class App extends Component {
          <div className="container">
             <Filters filters={this.state.filter}/>
             <UploadImage />
-            <Edit />
+            <Edit save={this.onSaveButtonClick}/>
          </div>
          <Footer />
       </div>
