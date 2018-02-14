@@ -13,17 +13,42 @@ import './style/app.css'
 class App extends Component {
    constructor(){
       super();
-      var filter = [{
-         name:'Sepia',
-         saturate:100,
-         contrast: 100,
-         brightness: 100,
-         invert: 0,
-         hueRotate: 0,
-         sepia: 80,
-         grayscale: 0,
-         blur: 0
-      },]
+      var filter = [
+      {
+      name:'Sepia',
+      saturate:100,
+      contrast: 100,
+      brightness: 100,
+      invert: 0,
+      hueRotate: 0,
+      sepia: 80,
+      grayscale: 0,
+      blur: 0
+      },
+      {
+      name:'Hue Rotated',
+      saturate:100,
+      contrast: 100,
+      brightness: 100,
+      invert: 0,
+      hueRotate: 180,
+      sepia: 0,
+      grayscale: 0,
+      blur: 0
+      },
+      {
+      name:'B&W',
+      saturate:100,
+      contrast: 100,
+      brightness: 100,
+      invert: 0,
+      hueRotate: 0,
+      sepia: 0,
+      grayscale: 100,
+      blur: 0
+      }
+
+   ]
       this.state={
          filter: filter
          }
@@ -60,8 +85,7 @@ class App extends Component {
          this.setState({filter: this.state.filter.concat(NewFilter)});
 
       }else{
-         alert('Please Give a Name to the Filter!');
-         
+         alert('Please Give a Name to the Filter!')
          //$('.share').append('<p class="caution">Please Give a Name to the Filter</p>')
       }
 
